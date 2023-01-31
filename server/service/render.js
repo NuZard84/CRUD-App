@@ -1,5 +1,5 @@
 const axios = require("axios");
-const config = require('./../../config');
+const config = require('../../config');
 
 exports.dashboard = (req, res) => {
   //make a get request to /api/user
