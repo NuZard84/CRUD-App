@@ -1,14 +1,15 @@
 const express = require("express");
-const dotenv = require("dotenv");
+
 const morgan = require("morgan");
 const bodyparser = require("body-parser");
 const path = require("path");
 const connectDB = require('./server/database/connection');
+const config = require('./config');
 
-dotenv.config();
+
 
 const app = express();
-const PORT = process.env.SERV_PORT;
+const PORT = config.SERV_PORT;
 
 
 //log-reqs...

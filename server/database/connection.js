@@ -1,10 +1,11 @@
 const mongoose = require("mongoose");
+const config = require('./../../config');
 
 const connectDB = async () => {
     try {
         
         mongoose.set('strictQuery', false);
-        const con = await mongoose.connect(process.env.DB_KEY, {
+        const con = await mongoose.connect(config.DB_KEY, {
             useNewUrlParser: true,
            
         })
