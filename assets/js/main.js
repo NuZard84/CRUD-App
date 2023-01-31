@@ -13,14 +13,14 @@ $("#update_user").submit(function (event) {
   });
 
   var request = {
-    url: `http://localhost:8989/api/user/${data.id}`,
+    url: `https://xms.onrender.com/api/user/${data.id}`,
     method: "PUT",
     data: data,
   };
 
   $.ajax(request).done(function (response) {
       alert("Data Updated Successfully!");
-      location.replace("http://localhost:8989/")
+      location.replace("https://xms.onrender.com/")
   });
 });
 
@@ -30,7 +30,7 @@ if (window.location.pathname == "/") {
     var id = $(this).attr("data-id");
 
     var request = {
-      url: `http://localhost:8989/api/user/${id}`,
+      url: `https://xms.onrender.com/api/user/${id}`,
       method: "DELETE",
     };
 
