@@ -6,6 +6,7 @@ exports.dashboard = (req, res) => {
   axios
     .get(`${config._LINK}/api/user`)
     .then(function (bunch) {
+      
       res.render("dashboard", { users: bunch.data });
     })
     .catch((err) => {

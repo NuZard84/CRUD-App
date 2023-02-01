@@ -17,6 +17,7 @@ app.use(morgan("tiny"));
 //connect Database..
 connectDB();
 
+
 //pass req to body-parser...
 app.use(bodyparser.urlencoded({ extended: true }));
 

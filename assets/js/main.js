@@ -13,14 +13,14 @@ $("#update_user").submit(function (event) {
   });
 
   var request = {
-    url: `https://xms.onrender.com/api/user/${data.id}`,
+    url: `https://crudapp-j2iy.onrender.com/api/user/${data.id}`,
     method: "PUT",
     data: data,
   };
 
   $.ajax(request).done(function (response) {
-      alert("Data Updated Successfully!");
-      location.replace("https://xms.onrender.com/")
+    alert("Data Updated Successfully!");
+    location.replace("https://crudapp-j2iy.onrender.com/");
   });
 });
 
@@ -30,7 +30,7 @@ if (window.location.pathname == "/") {
     var id = $(this).attr("data-id");
 
     var request = {
-      url: `https://xms.onrender.com/api/user/${id}`,
+      url: `https://crudapp-j2iy.onrender.com/api/user/${id}`,
       method: "DELETE",
     };
 
@@ -42,4 +42,3 @@ if (window.location.pathname == "/") {
     }
   });
 }
-
