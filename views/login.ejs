@@ -1,0 +1,68 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- include header -->
+
+    <!-- Main -->
+
+    <main id="site-main">
+      <div class="container">
+        <div class="box-nav d-flex justify-between">
+          
+            <a href="/add-user" class="border-shadow">
+              <i class="fas fa-angle-double-right">
+              </i>
+              New User
+            </a>
+          </div>
+          
+        </div>
+        <div class="form-title text-center">
+          <h2 class="text-dark">Login</h2>
+          <span class="text-light">Use your credential to login your account</span>
+        </div>
+
+        <!-- form handling -->
+
+        <form action="/add-user" method="post" id="add_user">
+          <div class="new_user">
+            
+            <div class="form-group">
+              <label for="email" class="text-light">Email</label>
+              <input
+                type="text"
+                name="email"
+                value=""
+                placeholder="example@gmail.com"
+              />
+              <label for="password" class="text-light">Password</label>
+              <input
+                type="password"
+                name="password"
+                value=""
+                placeholder="password"
+              />
+
+              <div class="form-group">
+                <button type="submit" class="btn text-dark update">Login</button>
+              </div>
+              
+              <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+  <div class="google-btn">
+  <div class="google-icon-wrapper">
+    <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+  </div>
+  <p class="btn-text"><b>Sign in with google</b></p>
+</div>
+             
+           
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- MAin -->
+
+  <!-- include footer -->
+  <%- include('include/_footer') %>
+  <!-- include footer -->

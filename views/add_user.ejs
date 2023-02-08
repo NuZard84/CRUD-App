@@ -8,10 +8,10 @@
       <div class="container">
         <div class="box-nav d-flex justify-between">
           
-            <a href="/" class="border-shadow">
-              <i class="fas fa-angle-double-left">
+            <a href="/login" class="border-shadow">
+              <i class="fas fa-angle-double-right">
               </i>
-              All Users
+              Login
             </a>
           </div>
           
@@ -38,6 +38,27 @@
                 value=""
                 placeholder="example@gmail.com"
               />
+              <label for="password" class="text-light">Password</label>
+              <input
+                type="password"
+                name="password"
+                value=""
+                placeholder="password"
+              />
+              <label for="phonenum" class="text-light">PhoneNo</label>
+              <input
+                type="number"
+                name="phonenumber"
+                value=""
+                placeholder="PhoneNo"
+              />
+              <label for="bd" class="text-light">BirthDate</label>
+              <input
+                type="date"
+                name="bd"
+                value=""
+                placeholder="DD"
+              />
             </div>
             <div class="form-group">
               <label for="gender" class="text-light">Gender</label>
@@ -50,6 +71,27 @@
                 <label for="radio-3" class="radio-label">Female</label>
               </div>
               <div class="form-group">
+                <button type="submit" class="btn text-dark update">Save</button>
+              </div>
+              <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+<div class="google">
+  <a href="/auth/google"><div class="google-btn">
+  <div class="google-icon-wrapper">
+    <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+  </div>
+  <p class="btn-text"><b>Sign in with google</b></p>
+</div></a>
+
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+  <div class="google-btn">
+  <div class="google-icon-wrapper">
+    <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+  </div>
+  <p class="btn-text"><b>Sign in with google</b></p>
+</div>
+</div>
+              <!-- <div class="form-group">
               <label for="status" class="text-light">Status</label>
               <div class="radio inline">
                 <input type="radio" id="radio-4" name="status" value="Active" />
@@ -59,10 +101,7 @@
                 <input type="radio" id="radio-5" name="status" value="Inactive" />
                 <label for="radio-5" class="radio-label">Inactive</label>
               </div>
-            </div>
-            <div class="form-group">
-              <button type="submit" class="btn text-dark update">Save</button>
-            </div>
+            </div> -->
           </div>
         </form>
       </div>

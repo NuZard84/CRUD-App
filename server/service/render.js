@@ -1,12 +1,12 @@
 const axios = require("axios");
-const config = require('../../config');
+
+const config = require("../../config");
 
 exports.dashboard = (req, res) => {
   //make a get request to /api/user
   axios
     .get(`${config._LINK}/api/user`)
     .then(function (bunch) {
-      
       res.render("dashboard", { users: bunch.data });
     })
     .catch((err) => {
@@ -16,6 +16,10 @@ exports.dashboard = (req, res) => {
 
 exports.add_user = (req, res) => {
   res.render("add_user");
+};
+
+exports.login = (req, res) => {
+  res.render("login");
 };
 
 exports.update_user = (req, res) => {

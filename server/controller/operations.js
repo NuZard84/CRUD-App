@@ -13,7 +13,7 @@ exports.create = (req, res) => {
   var user = new userDB({
     name: bodyparser.name,
     email: bodyparser.email,
-    status: bodyparser.status,
+    phoneNo: bodyparser.phonenumber,
     gender: bodyparser.gender,
   });
 
