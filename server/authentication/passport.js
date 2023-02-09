@@ -23,6 +23,7 @@ passport.use(
     function (req, accessToken, refreshTokenx, user, done) {
       console.log(user);
       console.log(user.emails[0].value);
+      console.log('hello');
       return done(null, user);
     }
   )
