@@ -14,14 +14,14 @@ $("#update_user").submit(function (event) {
 
   var request = {
     // url: `https://crudapp-j2iy.onrender.com/api/user/${data.id}`,
-    url: ` http://localhost:8989/api/user/${data.id}`,
+    url: ` http://localhost:7979/api/user/${data.id}`,
     method: "PUT",
     data: data,
   };
 
   $.ajax(request).done(function (response) {
     alert("Data Updated Successfully!");
-    location.replace("http://localhost:8989/dashboard");
+    location.replace("http://localhost:7979/dashboard");
     // location.replace("https://crudapp-j2iy.onrender.com/");
   });
 });
@@ -32,7 +32,7 @@ if (window.location.pathname == "/dashboard") {
     var id = $(this).attr("data-id");
 
     var request = {
-      url: `http://localhost:8989/api/user/${id}`,
+      url: `http://localhost:7979/api/user/${id}`,
       // url: `https://crudapp-j2iy.onrender.com/api/user/${id}`,
       method: "DELETE",
     };
